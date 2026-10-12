@@ -1,0 +1,200 @@
+1,wall,1
+2,chair,2
+3,floor,3
+4,table,4
+5,door,5
+6,couch,6
+7,cabinet,7
+8,shelf,8
+9,desk,9
+10,office chair,10
+11,bed,11
+13,pillow,12
+14,sink,13
+15,picture,14
+16,window,15
+17,toilet,16
+18,bookshelf,17
+19,monitor,18
+21,curtain,19
+22,book,20
+23,armchair,21
+24,coffee table,22
+26,box,23
+27,refrigerator,24
+28,lamp,25
+29,kitchen cabinet,26
+31,towel,27
+32,clothes,28
+33,tv,29
+34,nightstand,30
+35,counter,31
+36,dresser,32
+38,stool,33
+39,cushion,34
+40,plant,35
+41,ceiling,36
+42,bathtub,37
+44,end table,38
+45,dining table,39
+46,keyboard,40
+47,bag,41
+48,backpack,42
+49,toilet paper,43
+50,printer,44
+51,tv stand,45
+52,whiteboard,46
+54,blanket,47
+55,shower curtain,48
+56,trash can,49
+57,closet,50
+58,stairs,51
+59,microwave,52
+62,stove,53
+63,shoe,54
+64,computer tower,55
+65,bottle,56
+66,bin,57
+67,ottoman,58
+68,bench,59
+69,board,60
+70,washing machine,61
+71,mirror,62
+72,copier,63
+73,basket,64
+74,sofa chair,65
+75,file cabinet,66
+76,fan,67
+77,laptop,68
+78,shower,69
+79,paper,70
+80,person,71
+82,paper towel dispenser,72
+84,oven,73
+86,blinds,74
+87,rack,75
+88,plate,76
+89,blackboard,77
+90,piano,78
+93,suitcase,79
+95,rail,80
+96,radiator,81
+97,recycling bin,82
+98,container,83
+99,wardrobe,84
+100,soap dispenser,85
+101,telephone,86
+102,bucket,87
+103,clock,88
+104,stand,89
+105,light,90
+106,laundry basket,91
+107,pipe,92
+110,clothes dryer,93
+112,guitar,94
+115,toilet paper holder,95
+116,seat,96
+118,speaker,97
+120,column,98
+121,bicycle,99
+122,ladder,100
+125,bathroom stall,101
+128,shower wall,102
+130,cup,103
+131,jacket,104
+132,storage bin,105
+134,coffee maker,106
+136,dishwasher,107
+138,paper towel roll,108
+139,machine,109
+140,mat,110
+141,windowsill,111
+145,bar,112
+148,toaster,113
+154,bulletin board,114
+155,ironing board,115
+156,fireplace,116
+157,soap dish,117
+159,kitchen counter,118
+161,doorframe,119
+163,toilet paper dispenser,120
+165,mini fridge,121
+166,fire extinguisher,122
+168,ball,123
+169,hat,124
+170,shower curtain rod,125
+177,water cooler,126
+180,paper cutter,127
+185,tray,128
+188,shower door,129
+191,pillar,130
+193,ledge,131
+195,toaster oven,132
+202,mouse,133
+208,toilet seat cover dispenser,134
+213,furniture,135
+214,cart,136
+221,storage container,137
+229,scale,138
+230,tissue box,139
+232,light switch,140
+233,crate,141
+242,power outlet,142
+250,decoration,143
+261,sign,144
+264,projector,145
+276,closet door,146
+283,vacuum cleaner,147
+286,candle,148
+300,plunger,149
+304,stuffed animal,150
+312,headphones,151
+323,dish rack,152
+325,broom,153
+331,guitar case,154
+342,range hood,155
+356,dustpan,156
+370,hair dryer,157
+392,water bottle,158
+395,handicap bar,159
+399,purse,160
+408,vent,161
+417,shower floor,162
+488,water pitcher,163
+540,mailbox,164
+562,bowl,165
+570,paper bag,166
+572,alarm clock,167
+581,music stand,168
+609,projector screen,169
+748,divider,170
+776,laundry detergent,171
+1156,bathroom counter,172
+1163,object,173
+1164,bathroom vanity,174
+1165,closet wall,175
+1166,laundry hamper,176
+1167,bathroom stall door,177
+1168,ceiling light,178
+1169,trash bin,179
+1170,dumbbell,180
+1171,stair rail,181
+1172,tube,182
+1173,bathroom cabinet,183
+1174,cd case,184
+1175,closet rod,185
+1176,coffee kettle,186
+1178,structure,187
+1179,shower head,188
+1180,keyboard piano,189
+1181,case of water bottles,190
+1182,coat rack,191
+1183,storage organizer,192
+1184,folded chair,193
+1185,fire alarm,194
+1186,power strip,195
+1187,calendar,196
+1188,poster,197
+1189,potted plant,198
+1190,luggage,199
+1191,mattress,200

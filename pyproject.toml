@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vcpq"
+version = "0.1.0"
+description = "View-Consistent Panoptic Quality (VC-PQ) and the multi-view panoptic evaluation protocol"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = ["numpy>=1.24", "scipy>=1.10", "pillow>=9"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+vcpq-recompute = "vcpq.recompute:main"
+vcpq-eval = "vcpq.cli:eval_main"
+vcpq-pool = "vcpq.pool:main"
+
+[tool.setuptools.packages.find]
+include = ["vcpq*"]
+
+[tool.setuptools.package-data]
+vcpq = ["data/*.csv", "protocol/lists/*.json"]

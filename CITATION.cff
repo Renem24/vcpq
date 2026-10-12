@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "vcpq: evaluation code for View-Consistent Panoptic Quality (VC-PQ)"
+type: software
+version: 0.1.0
+license: MIT
+authors:
+  - family-names: "Lee"
+    given-names: "Youngmin"
+  - family-names: "Ko"
+    given-names: "Byungha"
+  - family-names: "Yun"
+    given-names: "Guhnoo"
+  - family-names: "Kim"
+    given-names: "Dong Hwan"
+preferred-citation:
+  type: generic
+  title: "Every View Counts: View-Consistent Panoptic Quality for Multi-view Panoptic Segmentation"
+  authors:
+    - family-names: "Lee"
+      given-names: "Youngmin"
+    - family-names: "Ko"
+      given-names: "Byungha"
+    - family-names: "Yun"
+      given-names: "Guhnoo"
+    - family-names: "Kim"
+      given-names: "Dong Hwan"
+  year: 2026
+  url: "https://arxiv.org/abs/2610.05911"
+  notes: "arXiv:2610.05911"

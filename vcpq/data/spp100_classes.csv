@@ -1,0 +1,101 @@
+spp100_id,name,isthing
+1,wall,0
+2,ceiling,0
+3,floor,0
+4,table,1
+5,door,1
+6,ceiling lamp,1
+7,cabinet,1
+8,blinds,1
+9,curtain,1
+10,chair,1
+11,storage cabinet,1
+12,office chair,1
+13,bookshelf,1
+14,whiteboard,1
+15,window,1
+16,box,1
+17,window frame,0
+18,monitor,1
+19,shelf,1
+20,doorframe,0
+21,pipe,0
+22,heater,1
+23,kitchen cabinet,1
+24,sofa,1
+25,windowsill,0
+26,bed,1
+27,shower wall,0
+28,trash can,1
+29,book,1
+30,plant,1
+31,blanket,1
+32,tv,1
+33,computer tower,1
+34,kitchen counter,0
+35,refrigerator,1
+36,jacket,1
+37,electrical duct,0
+38,sink,1
+39,bag,1
+40,picture,1
+41,pillow,1
+42,towel,1
+43,suitcase,1
+44,backpack,1
+45,crate,1
+46,keyboard,1
+47,rack,1
+48,toilet,1
+49,paper,0
+50,printer,1
+51,poster,1
+52,painting,1
+53,microwave,1
+54,board,0
+55,shoes,1
+56,socket,1
+57,bottle,1
+58,bucket,1
+59,cushion,1
+60,basket,1
+61,shoe rack,1
+62,telephone,1
+63,file folder,1
+64,cloth,0
+65,blind rail,0
+66,laptop,1
+67,plant pot,1
+68,exhaust fan,1
+69,cup,1
+70,coat hanger,1
+71,light switch,1
+72,speaker,1
+73,table lamp,1
+74,air vent,0
+75,clothes hanger,0
+76,kettle,1
+77,smoke detector,1
+78,container,1
+79,power strip,1
+80,slippers,1
+81,paper bag,1
+82,mouse,1
+83,cutting board,1
+84,toilet paper,1
+85,paper towel,1
+86,pot,1
+87,clock,1
+88,pan,1
+89,tap,1
+90,jar,1
+91,soap dispenser,1
+92,binder,1
+93,bowl,1
+94,tissue box,1
+95,whiteboard eraser,1
+96,toilet brush,1
+97,spray bottle,1
+98,headphones,1
+99,stapler,1
+100,marker,1
