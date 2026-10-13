@@ -11,6 +11,10 @@ license = "MIT"
 license-files = ["LICENSE"]
 dependencies = ["numpy>=1.24", "scipy>=1.10", "pillow>=9"]
 
+[project.urls]
+Repository = "https://github.com/Renem24/vcpq"
+Paper = "https://arxiv.org/abs/2610.05911"
+
 [project.optional-dependencies]
 dev = ["pytest>=8"]
 

@@ -4,6 +4,7 @@ title: "vcpq: evaluation code for View-Consistent Panoptic Quality (VC-PQ)"
 type: software
 version: 0.1.0
 license: MIT
+repository-code: "https://github.com/Renem24/vcpq"
 authors:
   - family-names: "Lee"
     given-names: "Youngmin"

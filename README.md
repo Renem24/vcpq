@@ -41,6 +41,7 @@ Contents: [Quick start](#quick-start) · [Install](#install) ·
 Python 3.10 or newer. The metric code needs only numpy, scipy and pillow.
 
 ```bash
+git clone https://github.com/Renem24/vcpq.git && cd vcpq
 uv sync --extra dev && source .venv/bin/activate   # or: pip install -e ".[dev]"
 ```
 
@@ -417,8 +418,8 @@ Each scene directory also holds `depth/`, `pose/`, `intrinsic/`,
 `categories.json`. The evaluation reads only `color/` and the two label
 directories.
 
-Measured for one scene with `--subset eval` (120 frames), 2026-09-30, on one
-machine with an RTX 3090 Ti (EGL rendering):
+Measured for one scene with `--subset eval` (120 frames) on one machine
+with an RTX 3090 Ti (EGL rendering):
 
 | scene | wall time | peak memory (RSS) | output |
 |---|---|---|---|
@@ -563,7 +564,9 @@ and score it with `vcpq-eval --predictor module:factory` as above.
 
 ## Verification
 
-Dates are 2026-09-27 to 2026-10-12.
+The paper's result files use the older key names `rf_off`, `rf_on` and `th_`
+(now `robust_filter_off`, `robust_filter_on` and `things_`); the comparisons
+below map them.
 
 - VC-PQ and PQ^scene computed by `vcpq-recompute` are bit-identical to
   those of the evaluation code used for the paper's numbers, chunk by chunk,
@@ -577,16 +580,16 @@ Dates are 2026-09-27 to 2026-10-12.
   per-chunk records agree
   for 600/600 chunks, and their 1200 VC-PQ and PQ^scene blocks are
   identical.
-- Cells of the paper's tables, recomputed the same way on 2026-09-30 with an
-  earlier version of this code: 31 of the 34 cells have 0 differing leaves
+- Cells of the paper's tables, recomputed the same way with a pre-release
+  version of this code: 31 of the 34 cells have 0 differing leaves
   (the 24 ScanNet++ cells of PanSt3R v1, PanSt3R v2, EPS3D and IGGT; on
   ScanNetv2, PanSt3R v2 at N = 5, 10, 20 and 40, EPS3D at N = 10 and SegVGGT
   at N = 5 and 10). The other three (SegVGGT on ScanNetv2 at N = 20 and 40,
   EPS3D on ScanNetv2 at N = 5) were not recomputed.
-- This version of the code (2026-10-12): PanSt3R v2 at N = 10 on ScanNet++
-  DSLR and iPhone, recomputed with gamma 0.0 to 1.0 in steps of 0.2, once
-  with `--both_robust_filter --class_agnostic` and once with the default
-  variants. With both options, the VC-PQ blocks (all six gamma values, with the error
+- The released code: PanSt3R v2 at N = 10 on ScanNet++ DSLR and iPhone,
+  recomputed with gamma 0.0 to 1.0 in steps of 0.2, once with
+  `--both_robust_filter --class_agnostic` and once with the default variants.
+  With both options, the VC-PQ blocks (all six gamma values, with the error
   decomposition and the class-agnostic blocks) and the PQ^scene block have 0
   differing leaves against the paper's `recompute.json`, except the iPhone
   per-scene means, which equal the paper's times 50/49: the default leaves
@@ -596,10 +599,6 @@ Dates are 2026-09-27 to 2026-10-12.
   ScanNet++ numbers for this method and N: PQ^scene 51.3 and VC-PQ 22.2
   (Table 1), and, on thing classes, VC-PQ 22.3 with error terms 67.5, 7.2 and
   3.0 (Table 3).
-- Later the same day the options and result keys were renamed from the
-  abbreviation `rf` to `robust_filter` (and `th_` to `things_`); the paper's
-  files use the old names. The same runs before and after the renaming give
-  identical values once the old key names are mapped to the new ones.
 - Ground-truth preprocessing (`--subset eval`, 120 listed frames per scene,
   compared file by file, then pixel by pixel): ScanNet++ iPhone `09c1414f1b`
   and ScanNetv2 `scene0011_00` are byte-identical to the paper's ground truth
