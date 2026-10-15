@@ -17,7 +17,7 @@ Tests:
      class, the matched pair's q (the class's q_sum) equals the brute-force
      concat IoU over the support union; its i (mean IoU, i_sum) and c (VC,
      c_sum) stay equal-image, so gamma changes q only.
-  3. The Sec. 3.2 counterexample (areas 1000/20/20/20, only the large image
+  3. A toy counterexample (areas 1000/20/20/20, only the large image
      predicted): gamma = 0 gives q = 0.25 (no match), gamma = 1 gives
      q = 1000/1060 (match).
 
@@ -223,7 +223,7 @@ def test_gamma1_pair_score_is_concat_iou_over_support_union(n_seeds: int = 300, 
     print(f'[2] gamma=1 q == concat IoU over support union on {n_pairs} matched pairs (eta={eta}); i, c unchanged')
 
 
-# ── 3. Sec. 3.2 counterexample ───────────────────────────────────────────────
+# ── 3. Toy counterexample ───────────────────────────────────────────────────
 
 def _counterexample_scene():
     Hc, Wc = 40, 40

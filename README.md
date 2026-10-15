@@ -196,7 +196,7 @@ change the result:
   weights views by area). Several values give one block per value.
 
 **Error decomposition.** The scorer also splits 1 - VC-PQ into the three
-terms of the paper's decomposition (Eq. 10). For a class with
+terms of the paper's decomposition (Eq. 7). For a class with
 `D = tp + fp/2 + fn/2 > 0` and the matching threshold tau = 0.5:
 
 - `acct_mask` (epsilon_IoU): the mean-IoU shortfall of the matched pairs,

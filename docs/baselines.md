@@ -243,7 +243,7 @@ classifier as the EPS3D row), where the IGGT paper names OpenSeg. ScanNet++
   model can change a few pixels.
 - PanSt3R v1 (`qubo`) is not: its simulated annealing draws from numpy's
   global random generator, which is never seeded. Repeated dumps differ; the
-  paper's Appendix A reports a run-to-run difference of at most 1.0 point
+  paper's Appendix A reports a run-to-run difference of at most 0.6 point
   PQ^scene and 0.1 point VC-PQ at N = 10.
 - EPS3D is not deterministic either: its encoder gives slightly different
   features for the same input from one forward to the next (most likely the
@@ -264,10 +264,8 @@ classifier as the EPS3D row), where the IGGT paper names OpenSeg. ScanNet++
 
 - **SegVGGT top-600 selection.** SegVGGT's own inference keeps the 600
   highest-scoring (query, class) pairs. The paper's dumps did not apply this
-  step (the panoptic competition needs one class per query). The paper's
-  Appendix A says "the 600 highest-scoring masks are kept"; that sentence and
-  the code that produced the numbers disagree, and the numbers are those of
-  the code.
+  step (the panoptic competition needs one class per query); each query takes
+  its highest-scoring class instead, as the paper's Appendix A describes.
 - **PanSt3R input sets with one view.** PanSt3R needs at least two views. The
   original evaluation skipped such a set without writing a chunk. The
   packaged frame lists (120 frames per scene) only produce one if ground-truth
